@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="new-btn">Add new member</button>
+
+    <div id="mod">
+        <div class="container">
+            <form>
+                <div class="input-group">
+                    <label for="roll-no">Roll no.</label>
+                    <input type="text" id="roll-no" placeholder="Enter your roll no">
+                </div>
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="input-group">
+                    <label for="office">Office Name</label>
+                    <input type="text" id="office" placeholder="Enter your office name">
+                </div>
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Id</label>
+                    <input type="email" id="email" placeholder="Enter email">
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone no.</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone no">
+                </div>
+                <div class="input-group">
+                    <label for="salary">Salary</label>
+                    <input type="text" id="salary" placeholder="Enter your salary">
+                </div>
+                <button id="submit-btn" onclick="return validate_submit()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Roll no.</th>
+                <th>Name</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
